@@ -1,0 +1,31 @@
+<header class="main-header">
+    <div class="width-limit">
+        <div class="main-header__brand">
+            <a class="main-header__logo" href="/" title="Vivas Bedriftsbehandling">
+                {% include components/logo.html %}
+            </a>
+        </div>
+
+        <nav class="main-header__nav font-2">
+            <ul>
+                <li><a href="#om-oss">Om oss</a></li>
+                <li><a href="#vi-tilbyr">Behandling</a></li>
+                <li><a href="#">Gratis prøvetime</a></li>
+                <li><a href="#">Kontakt oss</a></li>
+            </ul>
+        </nav>
+
+        <blockquote class="main-header__quote">
+            <p>En god arbeidsdag for oss er å få bruke vår kompetanse til at dine ansatte får en smertefri og behagelig hverdag</p>
+        </blockquote>
+    
+        <div class="main-header__call-to-action">
+            {% include components/button.html 
+                content="Gratis prøvetime" 
+            %}
+            <p>10 personer hos dere mottar en halvimes behandling hver</p>
+        </div>
+    
+    </div>
+
+</header>

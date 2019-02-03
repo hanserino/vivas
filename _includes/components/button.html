@@ -5,12 +5,13 @@
 {% assign href = include.href %}
 
 {% if content %}
+<div class="{{ class }}">
   {% if variant == 'button' %}
-    <button class="{{ class }}" type="{{ type }}">{{ content }}</button>
+    <button type="{{ type }}"><span>{{ content }}</span></button>
   {% else %}
 
-  <a class="{{ class }}" href="{{ href }}">{{ content }}</a>
+  <a href="{{ href }}"><span>{{ content }}</span></a>
 
   {% endif %}
-
+</div>
 {% endif %}

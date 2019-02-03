@@ -1,15 +1,14 @@
 title: Vivas Bedriftsbehandling
 subtitle: 
 lang: nb
-email: 
+email: eplehans@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Beskrivelse av Vivas
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_user: vivas
-seo_keywords: makerspace designlab kreativ fagskole 3dprinter vr
-address: Tollbugata 17, 0152 Oslo
-google_analytics: UA-128955857-1
+seo_keywords: naprapat bedriftsbehandling fysioterapi massasje manuellterapi
+google_analytics: 
 
 # Build settings
 

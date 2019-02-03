@@ -17,9 +17,6 @@
 }
 
 @include allAbove(medium){
-    body{
-        border: 10px solid red;
-    }
 
     [data-touch="false"] .mobileOnly {
         
@@ -28,18 +25,43 @@
 
 
 body{
-    background: #fff;
-    color: #1A171B;
+    background: $swatch3;
+    color: $swatch1;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1rem;
+    font-size: 1.15rem;
     line-height: 1.5;
 }
 
+.font-2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .width-limit{
-    max-width: 960px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: .5em;
+    padding-right: .5rem;
+    
+    @include allAbove(medium){
+        padding-left: 2em;
+        padding-right: 2rem;
+    }
+}
+
+blockquote{
+    quotes: '\201C' '\201D' "2018" "2019";
+    font-style: italic;
+}
+
+blockquote:before {
+    content: open-quote;
+}
+blockquote:after {
+    content: close-quote;
+}
+
+blockquote p {
+    display: inline;
 }
 
 img{
