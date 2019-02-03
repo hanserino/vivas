@@ -1,0 +1,38 @@
+title: Vivas Bedriftsbehandling
+subtitle: 
+lang: nb
+email: 
+description: >- # this means to ignore newlines until "baseurl:"
+  Beskrivelse av Vivas
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+instagram_user: vivas
+seo_keywords: makerspace designlab kreativ fagskole 3dprinter vr
+address: Tollbugata 17, 0152 Oslo
+google_analytics: UA-128955857-1
+
+# Build settings
+
+destination: docs
+plugins:
+  - jekyll-feed
+  
+# permalink: pretty
+markdown: kramdown
+
+# Sass settings
+sass:
+  sass_dir: style
+  style: compressed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,16 @@
+{% assign class = "vivas-button " | append: include.class %}
+{% assign variant = include.variant | default: "link" %}
+{% assign type = include.type | default: "submit" %}
+{% assign content = include.content %}
+{% assign href = include.href %}
+
+{% if content %}
+  {% if variant == 'button' %}
+    <button class="{{ class }}" type="{{ type }}">{{ content }}</button>
+  {% else %}
+
+  <a class="{{ class }}" href="{{ href }}">{{ content }}</a>
+
+  {% endif %}
+
+{% endif %}

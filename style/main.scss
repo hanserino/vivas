@@ -1,0 +1,48 @@
+
+@charset "utf-8";
+
+// Vendor -------------- //
+@import 'lib/reset';
+
+// Core -------------- //
+@import 'core/vars';
+@import 'core/utils'; 
+
+// Partials -------------- //
+@import 'partials/main-header';
+@import 'partials/button';
+
+[data-touch="false"] .mobileOnly { 
+    display: none;
+}
+
+@include allAbove(medium){
+    body{
+        border: 10px solid red;
+    }
+
+    [data-touch="false"] .mobileOnly {
+        
+    }
+}
+
+
+body{
+    background: #fff;
+    color: #1A171B;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.width-limit{
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}

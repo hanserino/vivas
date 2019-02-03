@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "nb" }}">
+
+{% include head.html %}
+
+<body data-loaded="false" data-touch="">
+  {% include symbols.html %}
+
+  {% include components/button.html 
+    content="Link" 
+  %}
+
+  {% include components/button.html 
+    content="Button" 
+    variant="button" 
+  %}
+
+  {% include footer.html %}
+  
+</body>
