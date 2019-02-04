@@ -3,11 +3,12 @@
 {% assign type = include.type | default: "submit" %}
 {% assign content = include.content %}
 {% assign href = include.href %}
+{% assign functionality = include.functionality %}
 
 {% if content %}
 <div class="{{ class }}">
   {% if variant == 'button' %}
-    <button type="{{ type }}"><span>{{ content }}</span></button>
+    <button type="{{ type }}" {% if functionality == 'toggle'%}class="toggle"{% endif %}><span>{{ content }}</span></button>
   {% else %}
 
   <a href="{{ href }}"><span>{{ content }}</span></a>

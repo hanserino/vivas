@@ -15,11 +15,25 @@ let isTouchDevice = function () {
 };
 
 
-function init() {   
+function init() {
     document.body.setAttribute("data-touch", isTouchDevice());
+
+    const toggler = document.getElementsByClassName("toggle");
     
+    for (var i = 0; i < toggler.length; i++) {
+
+        toggler[i].addEventListener('click', function(e){
+            e.preventDefault;
+            
+            e.target.parentNode.parentNode.classList.toggle('active');
+
+        }, false);
+    }
+
     console.log('init');
 }
+
+
 
 /**
  * Wait for document ready to fire dom dependent stuf

@@ -1,0 +1,27 @@
+.tilbud{
+    border: 1px solid rgba(0,0,0,.1);
+
+    @include allAbove(medium){
+        padding: 1rem;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    &__item{
+        margin: 0 .5rem .5rem 0;
+    }
+}
+
+.tilbud__info {
+    display: none;
+}
+.tilbud__item.active .tilbud__info{
+    display: block;
+}
+

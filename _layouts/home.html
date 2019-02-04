@@ -8,11 +8,63 @@
 
   {% include header.html %}
 
-  <!--<section id="om-oss" class="section">
-    <h1>Om oss</h1>
-    <h2>Vivas er en landsdekkende tilbyder av bedriftsbehandling innen <a href="#massasje">massasje</a>, <a href="#naprapati">naprapati</a> og <a href="#fysioterapi">fysioterapi</a>.</h2>
-  </section>
--->
+  <main>
+    <section id="om-oss" class="section">
+      <div class="width-limit">
+        <h1>Om oss</h1>
+        <h2>Vivas er en landsdekkende tilbyder av bedriftsbehandling innen <em>massasje</em>, <em>naprapati</em> og <em>fysioterapi</em>.</h2>
+      </div>
+    </section>
+
+    <section id="behandling" class="section">
+        <div class="width-limit">
+          <img class="section__img" src="{{ "/assets/img/handson.jpg" | relative_url }}" alt="Manuellterapeut fra Vivas som masserer en kunde">
+
+          <h1>Behandling</h1>
+          <h2>Vi er eksperter på</h2>
+
+          <ul>
+            <li>Behandling av muskel- og skjelettlidelser</li>
+            <li>Ergonomisk tilpasning av arbeidsstasjoner</li>
+            <li>Individuelt tilpassede treningsprogrammer</li>
+          </ul>
+
+          <h3>Vi behandler blant annet:</h3>
+          <ul>
+            <li>Hodepine</li>
+            <li>Kink</li>
+            <li>Hekseskudd</li>
+            <li>Svimmelhet</li>
+            <li>Musearm</li>
+            <li>Generelt stive og ømme muskler</li>
+          </ul>        
+
+          {% include tilbud.html %}
+
+          </div>
+      </section>
+
+
+
+    <section id="provetime" class="section">
+      <div class="width-limit">
+        <h1>Gratis prøvetime</h1>
+        <p>Vi blir enige om en dag der 10 heldige personer hos dere mottar en halvtimes behandling hver. Det eneste dere trenger å gjøre er å sette av et rom til jobben. Etter dagen mottar dere et uforpliktende tilbud fra oss.</p>
+        <div>
+          <img class="section__img" src="{{ "/assets/img/neck.jpg" | relative_url }}" alt="Manuellterapeut fra Vivas som masserer en kunde">
+          {% include components/button.html variant="link" content="Sign me up" %}
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+        <div class="width-limit">
+          <h1>Kontakt oss</h1>        
+        </div>
+      </section>
+  
+
+  </main>
 
   {% include footer.html %}
   
