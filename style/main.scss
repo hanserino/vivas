@@ -8,11 +8,14 @@
 @import 'core/vars';
 @import 'core/utils'; 
 
+
 // Partials -------------- //
 @import 'partials/main-header';
 @import 'partials/button';
 @import 'partials/behandling';
 @import 'partials/tilbud';
+ 
+@import 'partials/typography';
 
 [data-touch="false"] .mobileOnly { 
     display: none;
@@ -28,14 +31,6 @@
 
 body{
     background: $swatch3;
-    color: $swatch1;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.15rem;
-    line-height: 1.5;
-}
-
-.font-2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .width-limit{
@@ -70,3 +65,4 @@ img{
     max-width: 100%;
     height: auto;
 }
+
