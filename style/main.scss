@@ -66,3 +66,74 @@ img{
     height: auto;
 }
 
+
+.section__img{
+    margin-top: -2rem;
+    position: relative;
+    display: inline-block;
+
+    img{
+        position: relative;
+        z-index: 1;
+    }
+
+    &:after{
+        content: "";
+        background: rgba(0,0,0,.05);
+        position: absolute;
+        left: -1rem;
+        top: -1rem;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+
+    }
+
+    @include allAbove(medium){
+        margin-top: -6rem;
+    }
+}
+
+.om-oss{
+    padding: 8rem 0 4rem 0;
+
+    @include allAbove(medium){
+        padding: 8rem 0 12rem 0;
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+
+        @include allAbove(medium){
+            flex-direction: row;
+            align-items: flex-start;
+
+            h1{
+                margin-right: 2rem;
+                width: 60%;
+            }
+            h2{}
+        }
+    }
+
+    h1{}
+    h2{}
+}
+
+
+.behandling {
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+
+
+        @include allAbove(medium){
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    
+    }
+    
+}

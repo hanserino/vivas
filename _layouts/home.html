@@ -9,49 +9,57 @@
   {% include header.html %}
 
   <main>
-    <section id="om-oss" class="section">
+    <section id="om-oss" class="om-oss section">
       <div class="width-limit">
-        <h1 class="font-2 fs-1">Om oss</h1>
-        <h2 class="fs-1">Vivas er en landsdekkende tilbyder av bedriftsbehandling innen <em>massasje</em>, <em>naprapati</em> og <em>fysioterapi</em>.</h2>
+        <div class="om-oss__inner">
+          <h1 class="font-2 fs-1">Om oss</h1>
+          <h2 class="fs-1">Vivas er en landsdekkende tilbyder av bedriftsbehandling innen <em>massasje</em>, <em>naprapati</em> og <em>fysioterapi</em>.</h2>
+        </div>
       </div>
     </section>
 
-    <section id="behandling" class="section">
+    <section id="behandling" class="behandling section">
         <div class="width-limit">
-          <img class="section__img" src="{{ "/assets/img/handson.jpg" | relative_url }}" alt="Manuellterapeut fra Vivas som masserer en kunde">
+          <div class="behandling__inner">
+            <div class="section__img">
+              <img src="{{ "/assets/img/handson.jpg" | relative_url }}" alt="Manuellterapeut fra Vivas som masserer en kunde">
+            </div>
 
-          <h1 class="font-2 fs-2">Behandling</h1>
-          <h2 class="fs-2">Vi er eksperter på</h2>
+            <h1 class="font-2 fs-2">Behandling</h1>
+            <h2 class="fs-2">Vi er eksperter på</h2>
 
-          <ul>
-            <li>Behandling av muskel- og skjelettlidelser</li>
-            <li>Ergonomisk tilpasning av arbeidsstasjoner</li>
-            <li>Individuelt tilpassede treningsprogrammer</li>
-          </ul>
+            <ul>
+              <li>Behandling av muskel- og skjelettlidelser</li>
+              <li>Ergonomisk tilpasning av arbeidsstasjoner</li>
+              <li>Individuelt tilpassede treningsprogrammer</li>
+            </ul>
 
-          <h3 class="fs-3">Vi behandler blant annet:</h3>
-          <ul>
-            <li>Hodepine</li>
-            <li>Kink</li>
-            <li>Hekseskudd</li>
-            <li>Svimmelhet</li>
-            <li>Musearm</li>
-            <li>Generelt stive og ømme muskler</li>
-          </ul>        
+            <h3 class="fs-3">Vi behandler blant annet:</h3>
+            <ul>
+              <li>Hodepine</li>
+              <li>Kink</li>
+              <li>Hekseskudd</li>
+              <li>Svimmelhet</li>
+              <li>Musearm</li>
+              <li>Generelt stive og ømme muskler</li>
+            </ul>        
 
-          {% include tilbud.html %}
-
+            {% include tilbud.html %}
+            
           </div>
+        </div>
       </section>
-
-
 
     <section id="provetime" class="section">
       <div class="width-limit">
         <h1 class="font-2 fs-1">Gratis prøvetime</h1>
         <p>Vi blir enige om en dag der 10 heldige personer hos dere mottar en halvtimes behandling hver. Det eneste dere trenger å gjøre er å sette av et rom til jobben. Etter dagen mottar dere et uforpliktende tilbud fra oss.</p>
         <div>
-          <img class="section__img" src="{{ "/assets/img/neck.jpg" | relative_url }}" alt="Manuellterapeut fra Vivas som masserer en kunde">
+
+          <div class="section__img">
+            <img src="{{ "/assets/img/neck.jpg" | relative_url }}" alt="Manuellterapeut fra Vivas som masserer en kunde">
+          </div>
+
           {% include components/button.html variant="link" content="Sign me up" %}
         </div>
       </div>
