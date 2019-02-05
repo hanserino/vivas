@@ -5,7 +5,6 @@
 
 <body data-loaded="false" data-touch="">
   {% include symbols.html %}
-
   {% include header.html %}
 
   <main>
@@ -21,32 +20,43 @@
     <section id="behandling" class="behandling section">
         <div class="width-limit">
           <div class="behandling__inner">
-            <div class="section__img">
-              <img src="{{ "/assets/img/handson.jpg" | relative_url }}" alt="Manuellterapeut fra Vivas som masserer en kunde">
+
+            <div class="behandling__header">
+
+              <div class="section__img">
+                <img src="{{ "/assets/img/handson.jpg" | relative_url }}" alt="Manuellterapeut fra Vivas som masserer en kunde">
+              </div>
+
+              <div class="behandling__expertise">
+                <h1 class="font-2 fs-2">Behandling</h1>
+                <h2 class="fs-2">Vi er eksperter på</h2>
+                
+                <ul>
+                  <li>Behandling av muskel- og skjelettlidelser</li>
+                  <li>Ergonomisk tilpasning av arbeidsstasjoner</li>
+                  <li>Individuelt tilpassede treningsprogrammer</li>
+                </ul>
+              </div>
             </div>
 
-            <h1 class="font-2 fs-2">Behandling</h1>
-            <h2 class="fs-2">Vi er eksperter på</h2>
+            <div class="behandling__behandlinger">
+              <h3 class="fs-3">Vi behandler blant annet:</h3>
+              <ul>
+                <li>Hodepine</li>
+                <li>Kink</li>
+                <li>Hekseskudd</li>
+                <li>Svimmelhet</li>
+                <li>Musearm</li>
+                <li>Generelt stive og ømme muskler</li>
+              </ul>
+            </div>
 
-            <ul>
-              <li>Behandling av muskel- og skjelettlidelser</li>
-              <li>Ergonomisk tilpasning av arbeidsstasjoner</li>
-              <li>Individuelt tilpassede treningsprogrammer</li>
-            </ul>
+            <div class="behandling__tilbud">
+              {% include tilbud.html %}
+            </div>
 
-            <h3 class="fs-3">Vi behandler blant annet:</h3>
-            <ul>
-              <li>Hodepine</li>
-              <li>Kink</li>
-              <li>Hekseskudd</li>
-              <li>Svimmelhet</li>
-              <li>Musearm</li>
-              <li>Generelt stive og ømme muskler</li>
-            </ul>        
-
-            {% include tilbud.html %}
-            
           </div>
+
         </div>
       </section>
 

@@ -45,6 +45,13 @@ body{
     }
 }
 
+ul{
+    padding-left: 2rem;
+}
+li{
+    margin: .5rem 0;
+}
+
 blockquote{
     quotes: '\201C' '\201D' "2018" "2019";
     font-style: italic;
@@ -74,6 +81,7 @@ img{
 
     img{
         position: relative;
+        display: block;
         z-index: 1;
     }
 
@@ -90,7 +98,7 @@ img{
     }
 
     @include allAbove(medium){
-        margin-top: -6rem;
+        margin-top: -12rem;
     }
 }
 
@@ -122,18 +130,54 @@ img{
 }
 
 
-.behandling {
-
+.behandling { 
+   
     &__inner{
+        @include allAbove(medium){
+            padding: 5rem 0 12rem 0;
+        }
+    }
+
+    &__header {
         display: flex;
         flex-direction: column;
-
 
         @include allAbove(medium){
             flex-direction: row;
             align-items: flex-start;
+
+            > div{
+                width: 100%;
+            }
         }
-    
+    }
+
+    &__expertise {
+        @include allAbove(medium){
+            padding: 0 0 0 4rem;
+            margin: 0 auto;
+        }
     }
     
+    &__behandlinger {
+        padding: 0 1rem;
+
+        @include allAbove(medium){
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        ul{
+            
+            @include allAbove(medium){
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                li{
+                    width: 33.33333%;
+                }
+            }
+        }
+    }
 }
