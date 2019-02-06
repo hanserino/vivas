@@ -31,7 +31,12 @@
 .tilbud__info {
     display: none;
     margin: 1rem 0 2rem 0;
+
+    p {
+        margin: 0 0 1rem 0;
+    }
 }
+
 .tilbud__item.active .tilbud__info{
     display: block;
 }
