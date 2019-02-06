@@ -26,12 +26,14 @@
     span{
         padding: 1rem 2rem;
         display: inline-block;
+        width: 100%;
         z-index: 1;
         text-decoration: underline;
         font-weight: bold;
         font-size: 1rem;
         line-height: 1rem;
         text-transform: uppercase;
+        pointer-events: none;
     }
 
     &:after{
@@ -57,5 +59,14 @@
         }
     }
 
+}
 
+.active .toggle {
+    //background: rgba($swatch2, .01);
+    //color: white;
+}
+.active .vivas-button {
+    &:after{
+        border: 2px solid white;
+    }
 }

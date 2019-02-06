@@ -6,7 +6,7 @@
         padding: 2rem 2rem 1.5rem 2rem;
     }
 
-    ul{
+    > ul{
         list-style: none;
         padding: 1rem 0 0 0;
         display: flex;
@@ -30,6 +30,7 @@
 
 .tilbud__info {
     display: none;
+    margin: 1rem 0 2rem 0;
 }
 .tilbud__item.active .tilbud__info{
     display: block;

@@ -19,14 +19,19 @@ function init() {
     document.body.setAttribute("data-touch", isTouchDevice());
 
     const toggler = document.getElementsByClassName("toggle");
+
+    document.querySelector("button > span").addEventListener("click", function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+      });
+      
     
     for (var i = 0; i < toggler.length; i++) {
+        console.log(toggler[i]);
 
         toggler[i].addEventListener('click', function(e){
-            e.preventDefault;
-            
+            console.log(e.target);
             e.target.parentNode.parentNode.classList.toggle('active');
-
         }, false);
     }
 
