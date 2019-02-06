@@ -1,7 +1,5 @@
 .main-header{
     position: relative;
-    background: url('/assets/img/water.jpg') no-repeat center center fixed;
-    background-size: cover;
     height: 70vh;
 
     @include allAbove(medium){
