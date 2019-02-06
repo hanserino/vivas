@@ -1,8 +1,13 @@
 .footer{
     padding: 3rem 1rem;
+    text-align: center;
 
     &__inner{
-        display: flex;
+        
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 
     &__logo{

@@ -1,19 +1,21 @@
 <footer class="footer">
     <div class="footer__inner">
-        <h2>This is the footer</h2>
+        
         <img class="footer__logo" src="{{ "/assets/img/triangle.png" | relative_url }}" alt="">
         
-
         <div class="footer__social">
             <a target="_blank" href="https://www.facebook.com/{{ site.facebook_user }}" title="Vivas på Facebook">
-                <span>Facebook</span>
+                <span class="visuallyhidden">Følg Vivas på Facebook</span>
                 <svg class="icon icon-facebook-square"><use xlink:href="#icon-facebook-square"></use></svg>
             </a>
             <a target="_blank" href="https://www.instagram.com/{{ site.instagram_user }}" title="Vivas på Instagram">
-                <span>Instagram</span>
+                <span class="visuallyhidden">Følg Vivas på Instagram</span>
                 <svg class="icon icon-instagram-square"><use xlink:href="#icon-instagram"></use></svg>
             </a>
         </div>
+        
+        <p class="copyright">Copyright &copy; <span id="year"></span> all rights reserved</p>
+
     </div>
 
 </footer>

@@ -17,6 +17,7 @@ let isTouchDevice = function () {
 
 function init() {
     document.body.setAttribute("data-touch", isTouchDevice());
+    document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()));
 
     const toggler = document.getElementsByClassName("toggle");
 
@@ -30,12 +31,10 @@ function init() {
         console.log(toggler[i]);
 
         toggler[i].addEventListener('click', function(e){
-            console.log(e.target);
             e.target.parentNode.parentNode.classList.toggle('active');
         }, false);
     }
 
-    console.log('init');
 }
 
 
