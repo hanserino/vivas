@@ -1,8 +1,9 @@
 .tilbud{
     border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem 1rem .5rem 1rem;
 
     @include allAbove(medium){
-        padding: 2rem;
+        padding: 2rem 2rem 1.5rem 2rem;
     }
 
     ul{

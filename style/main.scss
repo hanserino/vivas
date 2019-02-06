@@ -34,7 +34,7 @@ body{
 }
 
 .width-limit{
-    max-width: 1000px;
+    max-width: 960px;
     margin: 0 auto;
     padding-left: .5em;
     padding-right: .5rem;
@@ -75,9 +75,12 @@ img{
 
 
 .section__img{
-    margin-top: -2rem;
     position: relative;
     display: inline-block;
+
+    @include allAbove(medium){
+        right: -1rem;
+    }
 
     img{
         position: relative;
@@ -94,11 +97,6 @@ img{
         width: 100%;
         height: 100%;
         z-index: 0;
-
-    }
-
-    @include allAbove(medium){
-        margin-top: -12rem;
     }
 }
 
@@ -131,11 +129,20 @@ img{
 
 
 .behandling { 
-   
-    &__inner{
+    padding: 2rem 0rem;
+
+    @include allAbove(medium){
+        padding: 5rem 0 8rem 0;
+    }
+
+    .section__img {
+        margin-top: -4rem;
+
         @include allAbove(medium){
-            padding: 5rem 0 12rem 0;
+            margin-top: -10rem;
+            margin-right: 5rem;
         }
+
     }
 
     &__header {
@@ -154,9 +161,12 @@ img{
 
     &__expertise {
         @include allAbove(medium){
-            padding: 0 0 0 4rem;
-            margin: 0 auto;
+            
         }
+    }
+
+    &__tilbud{
+        margin: 1rem 0;
     }
     
     &__behandlinger {
@@ -164,7 +174,7 @@ img{
 
         @include allAbove(medium){
             padding: 0 2rem;
-            margin: 2rem 0;
+            margin: 1rem 0;
         }
 
         ul{
@@ -178,6 +188,46 @@ img{
                     width: 33.33333%;
                 }
             }
+        }
+    }
+}
+
+
+.provetime { 
+    padding: 2rem 0;
+    @include allAbove(medium){
+        padding: 3rem 0 5rem 0;
+    }
+
+    .vivas-button {
+        width: 100%;
+    }
+
+    .section__img {
+        margin-top: 2rem;
+
+        @include allAbove(medium){
+            margin: -5rem 0 2rem 0;
+        }
+    }
+    
+    &__inner{
+        display: flex;
+        flex-direction: column;
+
+        @include allAbove(medium){
+            flex-direction: row;
+            align-items: flex-start;
+
+            > div {
+                flex: 1;
+            }
+        }
+    }
+
+    @include allAbove(medium){
+        &__left{
+            margin-right: 5rem;
         }
     }
 }
