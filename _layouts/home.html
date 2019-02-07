@@ -4,6 +4,7 @@
 {% include head.html %}
 
 <body data-loaded="false" data-touch="">
+
   {% include symbols.html %}
   {% include header.html %}
 
@@ -76,8 +77,8 @@
               <img src="{{ "/assets/img/neck.jpg" | relative_url }}" alt="Manuellterapeut fra Vivas som masserer en kunde">
             </div>
 
-            {% include components/button.html variant="link" content="Meld på din bedrift" %}
-
+            {% include components/button.html variant="button" functionality="modal" content="Meld på din bedrift" %}
+          
           </div>
         </div>
       </div>
@@ -95,5 +96,20 @@
   </main>
 
   {% include footer.html %}
-  
+
+  <div class="modal">
+    <div class="modalTrigger modal__close-btn">Lukk</div>
+
+    <div class="provetime-modal modal-content">
+        <h2 class="fs-1">Påmelding gratis prøvetime</h2>
+        <p>Kontakt oss på telefon eller epost, så finner vi en dag som passer.</p>
+        <br>
+        <p>Epost: <a href="mailto:kontakt@vivasbedriftsbehandling.no">kontakt@vivasbedriftsbehandling.no</a></p>
+        <p>Tlf: +47 928 41 558</p>
+        <br>
+        <h4>Vi gleder oss til å møte dere!</h4>
+    </div>
+
+  </div>
+
 </body>

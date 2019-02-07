@@ -8,7 +8,7 @@
 {% if content %}
 <div class="{{ class }}">
   {% if variant == 'button' %}
-    <button type="{{ type }}" {% if functionality == 'toggle'%}class="toggle"{% endif %}><span>{{ content }}</span></button>
+    <button type="{{ type }}" {% if functionality == 'modal'%}class="modalTrigger"{% endif %} {% if functionality == 'toggle'%}class="toggle"{% endif %}><span>{{ content }}</span></button>
   {% else %}
 
   <a href="{{ href }}"><span>{{ content }}</span></a>

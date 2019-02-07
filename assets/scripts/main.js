@@ -20,6 +20,8 @@ function init() {
     document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()));
 
     const toggler = document.getElementsByClassName("toggle");
+    const modalTrigger = document.getElementsByClassName("modalTrigger");
+
 
     document.querySelector("button > span").addEventListener("click", function(e) {
         e.stopPropagation();
@@ -35,6 +37,15 @@ function init() {
         }, false);
     }
 
+    for (var i = 0; i < modalTrigger.length; i++) {
+        console.log(toggler[i]);
+
+        modalTrigger[i].addEventListener('click', function(e){
+            e.target.parentNode.classList.toggle('modalActive');
+            document.body.classList.toggle('modalActive');
+
+        }, false);
+    }
 }
 
 
