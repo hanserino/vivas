@@ -33,7 +33,8 @@
 
 .tilbud__info {
     display: none;
-    margin: 1rem 0 2rem 0;
+    background: transparent;
+    margin: 1rem 0;
 
     p {
         margin: 0 0 1rem 0;
@@ -44,3 +45,13 @@
     display: block;
 }
 
+.tilbud__item {
+    border: 1px solid transparent;
+    padding: .5rem;
+    margin: 0;
+}
+.tilbud__item.active{
+    border-color: rgba(0,0,0,.1);
+}
+
+ 
