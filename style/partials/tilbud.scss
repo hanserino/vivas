@@ -3,7 +3,7 @@
     padding: 1rem 1rem .5rem 1rem;
 
     @include allAbove(medium){
-        padding: 2rem 2rem 1.5rem 2rem;
+        padding: 1.5rem 2rem;
     }
 
     > ul{
@@ -17,11 +17,14 @@
     }
 
     &__item{
-        margin: 0 1.25rem 1.25rem 0;
+        margin: 0 0 1rem 0;
         flex-grow: 1;
         min-width: 25%;
         flex-grow: 1;
-        
+
+        @include allAbove(medium){
+            margin: 0 1.25rem 1.25rem 0;
+        }
         .vivas-button {
             width: 100%;
         }

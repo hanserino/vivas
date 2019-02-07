@@ -1,16 +1,30 @@
 .footer{
-    padding: 3rem 1rem;
-    text-align: center;
-
     &__inner{
-        
+        padding: 4rem 0;
+        position: relative;
+        text-align: center;
     }
+    &__social{
+        margin: 1rem 0;
+    }
+    
     a {
         text-decoration: none;
-        color: inherit;
+        color: $swatch2;
+        margin: 0 0.15rem;
     }
 
     &__logo{
         width: 3rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(0, 0);
+        transition: transform .45s ease-out .1s;
+
+        @include allAbove(large){
+            transform: translate(-100%, 0);
+            
+        }
     }
 }

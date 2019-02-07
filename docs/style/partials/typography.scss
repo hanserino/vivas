@@ -3,10 +3,19 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.15rem;
     line-height: 1.5;
-}   
+}
+h1 {
+    margin: 0 0 .75rem 0;
+}
+.f-bold, em {
+    font-weight: bold;
+}
 
 .font-2 {
     font-family: 'Noto Serif SC', serif; 
+}
+.f-bold {
+
 }
 
 .fs-1 {
@@ -16,7 +25,7 @@ body{
     font-size: 1.75rem;
 }
 .fs-3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 .fs-4 {
     font-size: 1.25rem;
