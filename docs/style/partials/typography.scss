@@ -6,6 +6,9 @@ body{
 }
 h1 {
     margin: 0 0 .75rem 0;
+    @include allAbove(medium){
+        margin: 0 0 1.5rem 0;
+    }
 }
 .f-bold, em {
     font-weight: bold;
@@ -19,7 +22,7 @@ h1 {
 }
 
 .fs-1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .fs-2 {
     font-size: 1.75rem;

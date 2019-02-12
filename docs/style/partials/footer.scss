@@ -1,13 +1,17 @@
 .footer{
     &__inner{
-        padding: 4rem 0;
+        padding: 4rem 0 5rem 0;
         position: relative;
         text-align: center;
     }
     &__social{
         margin: 1rem 0;
     }
-    
+    .copyright {
+        position: relative;
+        z-index: 2;
+
+    }
     a {
         text-decoration: none;
         color: $swatch2;
@@ -15,16 +19,21 @@
     }
 
     &__logo{
-        width: 3rem;
+        width: 4rem;
         position: absolute;
-        left: 0;
+        left: 50%;
         bottom: 0;
-        transform: translate(0, 0);
+        transform: translate(-50%, 0);
         transition: transform .45s ease-out .1s;
+
+        @include allAbove(medium){
+            transform: translate(-25%, 0);
+            left: 0;
+        }
 
         @include allAbove(large){
             transform: translate(-100%, 0);
-            
+            left: 0;
         }
     }
 }

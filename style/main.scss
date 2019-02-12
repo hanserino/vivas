@@ -280,6 +280,11 @@ img{
 
     .vivas-button {
         width: 100%;
+        position: relative;
+
+        @include allAbove(medium){
+            right: -1rem;
+        }
     }
 
     .section__img {
@@ -307,6 +312,57 @@ img{
     @include allAbove(medium){
         &__left{
             margin-right: 5rem;
+        }
+    }
+}
+
+.contact{
+    padding: 3rem 0;
+    
+    &__inner{
+        display: flex;
+        flex-direction: column;
+
+        @include allAbove(medium){
+            flex-direction: row;
+            align-items: flex-start;
+
+            > div {
+                flex: 1;
+            }
+        }
+    }
+
+    @include allAbove(medium){
+        &__left{
+            margin-right: 5rem;
+        }
+    }
+
+    &__details {
+        padding: 0;
+        list-style: none;
+        margin-top: 1rem;
+
+        @include allAbove(medium){
+            margin: 0;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: .75rem;
+        }
+        li {
+            margin-bottom: 1.25rem;
+        }
+        a {
+            text-decoration: none;
+            color: inherit; 
+
+            &:hover{
+                text-decoration: underline;
+            }
+
         }
     }
 }
