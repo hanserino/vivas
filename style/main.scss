@@ -332,15 +332,27 @@ img{
             }
         }
     }
+    &__messenger-link{
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+        vertical-align: middle;
+        img {
+            display: block;
+        }
+    }
 
     @include allAbove(medium){
+        &__right{
+            padding-left: 2rem;
+        }
         &__left{
             margin-right: 5rem;
         }
     }
 
     &__details {
-        padding: 0;
+        padding: 0; 
         list-style: none;
         margin-top: 1rem;
 
