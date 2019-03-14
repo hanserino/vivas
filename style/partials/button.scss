@@ -10,6 +10,8 @@
         display: block;
     }
 
+    
+
     > *{
         display: block; 
         background: white;
@@ -36,6 +38,13 @@
         pointer-events: none;
     }
 
+    &--small{
+        span {
+            font-size: .75rem;
+            padding: 0.5rem 1.2rem;
+        }
+    }
+
     &:after{
         content: "";
         position: absolute;
@@ -48,6 +57,10 @@
         opacity: .5;
         transition: transform .15s ease-out .05s;
         z-index: 0;
+    }
+
+    &--small::after{
+        transform: translate(.25rem, .25rem);
     }
 
     @include allAbove(medium){

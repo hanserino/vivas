@@ -13,7 +13,7 @@
       <div class="width-limit">
         <div class="om-oss__inner">
           <h1 class="font-2 fs-1">Om oss</h1>
-          <h2 class="fs-1">Vivas er en landsdekkende tilbyder av bedriftsbehandling innen <em>massasje</em>, <em>naprapati</em> og <em>fysioterapi</em>.</h2>
+          <h2 class="fs-1">Vi er en landsdekkende tilbyder av bedriftsbehandling innen <em>massasje</em>, <em>naprapati</em> og <em>fysioterapi</em>.</h2>
         </div>
       </div>
     </section>
@@ -23,11 +23,6 @@
           <div class="behandling__inner">
 
             <div class="behandling__header">
-
-              <div class="section__img">
-                <img src="{{ "/assets/img/handson.jpg" | relative_url }}" alt="Manuellterapeut fra Vivas som masserer en kunde">
-              </div>
-
               <div class="behandling__expertise">
                 <h1 class="font-2 fs-1">Behandling</h1>
                 <h2 class="fs-2">Vi er eksperter på</h2>
@@ -38,6 +33,13 @@
                   <li>Individuelt tilpassede treningsprogrammer</li>
                 </ul>
               </div>
+
+              <div class="section__media">
+                <div class="iframe-wrap" id="video">
+                  <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/PO-BLGUZ1W4?start=45" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+              
             </div>
 
             <div class="behandling__behandlinger">
@@ -73,7 +75,7 @@
           </div>
 
           <div class="provetime__right">
-            <div class="section__img">
+            <div class="section__media">
               <img src="{{ "/assets/img/neck.jpg" | relative_url }}" alt="Manuellterapeut fra Vivas som masserer en kunde">
             </div>
 
@@ -92,13 +94,13 @@
 
         <div class="contact__inner">
           <div class="contact__left">
-            <p class="fs-2">It's simply dummy text of the printing and «<a class="contact__messenger-link" href=""><img src="{{ "/assets/img/messenger-icon.png" | relative_url }}" alt=""/></a>» typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p class="fs-2">Vi er ikke vanskelige å nå. Ring oss eller <a href="">send oss en mail</a>, så snakkes vi før du vet ordet av det.</p>
           </div>
           <div class="contact__right">
             <ul class="contact__details">
               <li>
                 <h3 class="fs-3">Epost</h3>
-                <a href="mailto:kontakt@vivasbedriftsbehandling.no">kontakt@vivasbedriftsbehandling.no</a>
+                <a href="mailto:kontakt@vivasbedriftsbehandling.no">didrik@vivasbedriftsbehandling.no</a>
               </li>
               <li>
                 <h3 class="fs-3">Telefon</h3>
@@ -120,15 +122,20 @@
   {% include footer.html %}
 
   <div class="modal">
-    <div class="modalTrigger modal__close-btn">Lukk</div>
+    {% include components/button.html 
+      class='vivas-button--small modal__close-btn' 
+      variant='button'
+      functionality='modal'
+      content="Lukk"
+    %}
 
     <div class="provetime-modal modal-content">
-        <h2 class="fs-1">Påmelding gratis prøvetime</h2>
+        <h2 class="font-2 fs-2">Påmelding gratis prøvetime</h2>
         <p>Kontakt oss på telefon eller epost, så finner vi en dag som passer.</p>
         <br>
-        <p>Epost: <a href="mailto:kontakt@vivasbedriftsbehandling.no">kontakt@vivasbedriftsbehandling.no</a></p>
-        <p>Tlf: +47 928 41 558</p>
-        <br>
+
+        <p>Epost: <br><a href="mailto:kontakt@vivas.no">kontakt@vivas.no</a></p>
+        <p>Tlf: <br>+47 928 41 558</p>
         <h4>Vi gleder oss til å møte dere!</h4>
     </div>
 

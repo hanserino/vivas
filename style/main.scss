@@ -35,6 +35,11 @@ html {
     width: 100%;
     height: 100%;
     background: white;
+
+    a{
+        color: inherit;
+
+    }
     
     &::before{
         content: "";
@@ -45,14 +50,13 @@ html {
     }
 
     @include allAbove(medium){
-        width: 70vw;
-        height: 70vw;
-        max-width: 800px;
-        max-height: 700px;
+        height: auto;
+        max-width: 350px;
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
-        box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+        border: 4px solid#bec9c6;
+        box-shadow: 0px 0px 25px 5px rgba(0,0,0,.25);
     }
 
     @include allAbove(large){
@@ -61,18 +65,16 @@ html {
 
     &__close-btn{
         position: absolute;
-        top: 1rem;
-        right: 1rem;
+        top: .5rem;
+        right: .5rem;
         cursor: pointer;
-        border: 1px solid rgba(0,0,0,.5);
-        padding: .5rem;
         z-index: 11;
     }
 }
 .modal-content{
     display: none;
     width: 100%;
-    padding: 4rem 1rem 1rem 1rem;
+    padding: 3rem 1rem 1rem 1rem;
 }
 
 .modalActive{
@@ -149,8 +151,22 @@ img{
     height: auto;
 }
 
+.iframe-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
 
-.section__img{
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.section__media{
     position: relative;
     display: inline-block;
 
@@ -158,12 +174,12 @@ img{
         right: -1rem;
     }
 
-    img{
+    >* {
         position: relative;
         display: block;
         z-index: 1;
     }
-
+    
     &:after{
         content: "";
         background: rgba(0,0,0,.05);
@@ -178,10 +194,6 @@ img{
 
 .om-oss{
     padding: 8rem 0 4rem 0;
-
-    @include allAbove(medium){
-        padding: 8rem 0 12rem 0;
-    }
 
     &__inner{
         display: flex;
@@ -203,20 +215,18 @@ img{
     h2{}
 }
 
-
 .behandling { 
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
 
     @include allAbove(medium){
         padding: 4rem 0 8rem 0;
     }
 
-    .section__img {
-        margin-top: -4rem;
+    .section__media {
+        margin-top: 2rem;
 
         @include allAbove(medium){
-            margin-top: -10rem;
-            margin-right: 5rem;
+            margin-top: 0;
         }
 
     }
@@ -229,6 +239,7 @@ img{
         @include allAbove(medium){
             flex-direction: row;
             align-items: flex-start;
+            margin-bottom: 3rem;
 
             > div{
                 width: 100%;
@@ -241,6 +252,7 @@ img{
 
         @include allAbove(medium){
             margin: 0;
+            padding: 0 1rem 0 0;
         }
     }
 
@@ -368,7 +380,7 @@ img{
             margin-bottom: 1.25rem;
         }
         a {
-            text-decoration: none;
+            //text-decoration: none;
             color: inherit; 
 
             &:hover{
