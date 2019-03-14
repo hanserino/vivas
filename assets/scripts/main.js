@@ -60,7 +60,7 @@ function init() {
     })
 
     if(videoEl){
-        video('PO-BLGUZ1W4');
+        video('PO-BLGUZ1W4'); 
         console.log(videoEl);
     }
 
