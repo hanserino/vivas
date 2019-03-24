@@ -316,6 +316,18 @@ img{
     }
 }
 
+video{
+    position: relative;
+    z-index: 3;
+}
+
+.video{
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .contact{
     padding: 3rem 0;
     
