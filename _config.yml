@@ -1,13 +1,12 @@
 title: Vivas Bedriftsbehandling
-subtitle: 
+subtitle: Vår visjon er at dine ansatte får en smertefri og behagelig hverdag
 lang: nb
 email: eplehans@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Beskrivelse av Vivas
+  Vi er en landsdekkende tilbyder av bedriftsbehandling innen massasje, naprapati og fysioterapi.
 baseurl: "/vivas" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://vivas.no" # the base hostname & protocol for your site, e.g. http://example.com
 seo_keywords: naprapat bedriftsbehandling fysioterapi massasje manuellterapi
-google_analytics: 
 
 # Build settings
 
