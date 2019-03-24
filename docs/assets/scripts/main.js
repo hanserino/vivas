@@ -15,18 +15,20 @@ let isTouchDevice = function () {
 };
 
 
+
+
 function init() {
     document.body.setAttribute("data-touch", isTouchDevice());
     document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()));
 
     const toggler = document.getElementsByClassName("toggle");
+    const videoEl = document.getElementById("video");
     const modalTrigger = document.getElementsByClassName("modalTrigger");
-
 
     document.querySelector("button > span").addEventListener("click", function(e) {
         e.stopPropagation();
         e.preventDefault();
-      });
+    });
       
     
     for (var i = 0; i < toggler.length; i++) {
@@ -55,7 +57,13 @@ function init() {
                 behavior: 'smooth'
             });
         });
-    });
+    })
+
+    if(videoEl){
+        video('PO-BLGUZ1W4'); 
+        console.log(videoEl);
+    }
+
 }
 
 
