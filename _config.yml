@@ -4,7 +4,7 @@ lang: nb
 email: eplehans@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Vi er en landsdekkende tilbyder av bedriftsbehandling innen massasje, naprapati og fysioterapi.
-baseurl: "/vivas" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vivas.no" # the base hostname & protocol for your site, e.g. http://example.com
 seo_keywords: naprapat bedriftsbehandling fysioterapi massasje manuellterapi
 
